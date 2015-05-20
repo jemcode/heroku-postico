@@ -16,7 +16,7 @@ $ heroku help postico
 
 ## Usage
 
-To add (or open exiting) connections:
+To add (or open existing) connections:
 
 ```sh
 $ heroku postico:add
