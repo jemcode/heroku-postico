@@ -1,0 +1,22 @@
+{
+  "name": "heroku-postico",
+  "version": "0.0.1",
+  "description": "Heroku plugin for adding postgres connections from heroku to local Postico or PG Commander apps",
+  "main": "index.js",
+  "author": "Rikki Pitt @jemcode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jemcode/heroku-postico"
+  },
+  "bugs": {
+    "url": "https://github.com/jemcode/heroku-postico/issues"
+  },
+  "keywords": [
+    "heroku-plugin"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "heroku-cli-util": "^1.10.4",
+    "openurl": "^1.1.0"
+  }
+}
