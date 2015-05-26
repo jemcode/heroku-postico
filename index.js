@@ -4,5 +4,5 @@ exports.topics = [{
 }];
 
 exports.commands = [
-  require('./commands/postico/add'),
+  require('./commands/postico/open')
 ];

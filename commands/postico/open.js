@@ -4,8 +4,8 @@ let h       = require('heroku-cli-util');
 
 module.exports = {
   topic: 'postico',
-  command: 'add',
-  description: 'adds a postgres connection to your postico or pg commander app',
+  command: 'open',
+  description: 'adds and opens a postgres connection to your postico or pg commander app',
   help: '',
   needsApp: true,
   needsAuth: true,

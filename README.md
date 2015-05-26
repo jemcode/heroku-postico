@@ -19,15 +19,15 @@ $ heroku help postico
 To add (or open existing) connections:
 
 ```sh
-$ heroku postico:add
+$ heroku postico:open
 ```
 or
 
 ```sh
-$ heroku postico:add --app <app_name>
+$ heroku postico:open --app <app_name>
 ```
 or from within an application with multiple remotes
 
 ```sh
-$ heroku postico:add --remote <remote_name>
+$ heroku postico:open --remote <remote_name>
 ```
