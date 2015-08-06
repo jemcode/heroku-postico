@@ -16,7 +16,7 @@
   ],
   "license": "ISC",
   "dependencies": {
-    "heroku-cli-util": "^1.10.4",
+    "heroku-cli-util": "^5.4.2",
     "openurl": "^1.1.0"
   }
 }
