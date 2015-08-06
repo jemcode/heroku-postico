@@ -1,6 +1,10 @@
 Heroku Postico Plugin
 ================================
 
+[![npm version](https://badge.fury.io/js/heroku-postico.svg)](http://badge.fury.io/js/heroku-postico)
+[![Dependency Status](https://gemnasium.com/jemcode/heroku-postico.svg)](https://gemnasium.com/jemcode/heroku-postico)
+[![Code Climate](https://codeclimate.com/github/jemcode/heroku-postico/badges/gpa.svg)](https://codeclimate.com/github/jemcode/heroku-postico)
+
 This plugin is to quickly and easily add your application Postgres connection details to [Postico](https://eggerapps.at/postico/) - _"A Modern PostgreSQL Client for OS X"._
 
 Also compatible with [PG Commander](https://eggerapps.at/pgcommander/), Postico's predecessor.
