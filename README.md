@@ -36,3 +36,11 @@ or from within an application with multiple remotes
 ```sh
 $ heroku postico:open --remote <remote_name>
 ```
+
+## About Jemcode
+
+<img src="https://www.jemco.de/logo.svg" width="400" alt="Jemcode">
+
+Heroku Postico is maintained and funded by Jemcode Limited. We are [available for hire][hire].
+
+[hire]: https://www.jemco.de?utm_source=github
