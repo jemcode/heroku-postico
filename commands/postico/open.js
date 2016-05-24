@@ -1,6 +1,19 @@
 'use strict';
 let openurl = require('openurl');
-let h       = require('heroku-cli-util');
+let cli     = require('heroku-cli-util');
+let co      = require('co');
+
+function* app (context, heroku) {
+  let config = yield heroku.get(`/apps/${context.app}/config-vars`)
+
+  if (!config.DATABASE_URL) {
+    console.error('App does not have DATABASE_URL');
+    process.exit(1);
+  } else {
+    console.log('Opening local Postgres app...');
+    openurl.open(config.DATABASE_URL + '?nickname=' + context.app);
+  }
+}
 
 module.exports = {
   topic: 'postico',
@@ -9,15 +22,5 @@ module.exports = {
   help: '',
   needsApp: true,
   needsAuth: true,
-
-  run: h.command(function* (context, heroku) {
-    let config = yield heroku.apps(context.app).configVars().info();
-    if (!config.DATABASE_URL) {
-      console.error('App does not have DATABASE_URL');
-      process.exit(1);
-    }
-
-    console.log('Opening local Postgres app...');
-    openurl.open(config.DATABASE_URL + '?nickname=' + context.app);
-  })
-};
+  run: cli.command(co.wrap(app))
+}
