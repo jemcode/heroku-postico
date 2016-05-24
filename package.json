@@ -1,6 +1,6 @@
 {
   "name": "heroku-postico",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Heroku plugin for adding postgres connections from heroku to local Postico or PG Commander apps",
   "main": "index.js",
   "author": "Rikki Pitt @jemcode",
