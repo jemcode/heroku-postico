@@ -4,7 +4,7 @@ let cli     = require('heroku-cli-util');
 let co      = require('co');
 
 function* app (context, heroku) {
-  let config = yield heroku.get(`/apps/${context.app}/config-vars`)
+  let config = yield heroku.get(`/apps/${context.app}/config-vars`);
 
   if (!config.DATABASE_URL) {
     console.error('App does not have DATABASE_URL');
