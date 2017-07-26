@@ -23,4 +23,4 @@ module.exports = {
   needsApp: true,
   needsAuth: true,
   run: cli.command(co.wrap(app))
-}
+};
