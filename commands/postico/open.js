@@ -11,7 +11,7 @@ function* app (context, heroku) {
     process.exit(1);
   } else {
     console.log('Opening local Postgres app...');
-    openurl.open(config.DATABASE_URL + '?nickname=' + context.app);
+    openurl.open(`${config.DATABASE_URL}?nickname=${context.app}`);
   }
 }
 
